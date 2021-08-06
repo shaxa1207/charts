@@ -156,8 +156,10 @@ a {
   text-decoration: none;
 }
 .aside {
+  position: sticky;
+  top: 0;
   background: #ffffff;
-  height: 100%;
+  height: 100vh;
   padding: 24px;
   box-shadow: 4px 0px 16px rgba(16, 30, 115, 0.08);
   max-width: 256px;

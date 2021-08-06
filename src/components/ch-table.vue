@@ -8,10 +8,10 @@
         <th>Date</th>
         <th>Visit Time</th>
         <th>Doctor</th>
-        <th>Conditions</th>
-        <th></th>
+        <th>Coitions</th>
+        <th>gergerg</th>
       </tr>
-      <tr v-for="(element, index) in this.tableInfo" :key="index">
+      <tr class="td-row" v-for="(element, index) in this.tableInfo" :key="index">
         <td><img :src="element.img" alt="" />{{ element.name }}</td>
         <td>{{ element.email }}</td>
         <td>{{ element.date }}</td>
@@ -97,11 +97,11 @@ td {
   line-height: 20px;
   letter-spacing: 0.1px;
   color: #52575c;
+  padding: 4px 0;
   img {
     padding: 0;
     margin-right: 12px;
   }
-  padding: 4px 0;
 }
 th {
   font-family: Lato, sans-serif;
@@ -123,7 +123,8 @@ th {
     line-height: 26px;
     letter-spacing: 0.2px;
     color: #25282b;
-    margin-bottom: 18px;
+    padding: 24px;
+    margin: 0;
   }
   .table {
     .heading-row {
@@ -131,10 +132,14 @@ th {
       opacity: 0.2;
       padding: 19px 0;
       width: 100%;
-      th {
-        color: #25282b !important;
-        opacity: 1 !important;
+      th:first-child{
+        
       }
+    }
+    .td-row{
+        td:first-child{
+            padding-left: 24px;
+        }
     }
   }
 }

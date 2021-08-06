@@ -84,6 +84,7 @@ export default {
       padding: 12px 16px 12px 42px;
       width: 350px;
       border: 1px solid #f6f8fb;
+      outline: none;
     }
     .icon-search {
       position: absolute;
